@@ -5,27 +5,30 @@
 #catPosts {
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 1.5rem;
   padding: 0;
   margin: 0;
 }
 
-#body {
-  background-color: bisque;
+#footer {
+  bottom: 0;
+  width: 100%;
 }
 
-#catModal {
-  background-color: lightgray;
-}
 #modal {
   z-index: 3;
   position: fixed;
   top: 30%;
   left: 30%;
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .cat {
@@ -34,4 +37,9 @@
 
 .hidden {
   display: none;
+}
+
+.fade {
+  background-color: gray;
+  opacity: 0.5;
 }
